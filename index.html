@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+
+    <h1 id="bulbdata" style="text-align: center;"> Lights ON OFF </h1>
+
+    <main class="lightapp">
+        <figure>
+            <img src="lightoff.jpg" style="height: 250px; width: 250px;" id="lightid" onclick="lighton()">
+        </figure>
+
+        <figure>
+            <img src="lightoff.jpg" style="height: 250px; width: 250px;" id="lightid" onclick="lighton()">
+        </figure>
+
+        <figure>
+            <img src="lightoff.jpg" style="height: 250px; width: 250px;" id="lightid" onclick="lighton()">
+        </figure>
+
+        <figure>
+            <img src="lightoff.jpg" style="height: 250px; width: 250px;" id="lightid" onclick="lighton()">
+        </figure>
+
+        <figure>
+            <img src="lightoff.jpg" id="lightid" style="height: 250px; width: 250px;" onclick="lighton()">
+        </figure>
+
+
+    </main>
+
+    <script>
+
+        const lighton = () => {
+
+
+            let bid = document.getElementById("lightid");
+
+            if (bid.src.match("lighton")) {
+                bid.src = "lightoff.jpg";
+            } else {
+                bid.src = "lighton.jpg";
+
+            }
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

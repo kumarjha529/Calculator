@@ -1,0 +1,7 @@
+.lightapp{
+   width: 100%;
+   height: 80vh;
+   justify-content: center;
+   display: flex;
+   align-items: center; 
+}
